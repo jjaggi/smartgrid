@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a38a7d76607747ff99a4efea498cd349" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="SmartEnergyDbModel.CarbonEmissionsDataPoint" Width="1.5" PointX="3" PointY="4.125" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.CarbonEmissionsRelativeMeritDataPoint" Width="1.5" PointX="3" PointY="10.5" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.EmissionsRegion" Width="1.5" PointX="0.75" PointY="5.25" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.MarketDataPoint" Width="1.5" PointX="5.75" PointY="9" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.MarketRegion" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.MarketWeatherEmissionsRegionMapping" Width="1.5" PointX="6" PointY="5.375" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.WeatherDataPoint" Width="1.5" PointX="6" PointY="13.25" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.WeatherRegion" Width="1.5" PointX="3.75" PointY="14" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.MostRecentEmissionsDataPointForEachRegion" Width="1.5" PointX="5.75" PointY="2" />
+        <EntityTypeShape EntityType="SmartEnergyDbModel.ProcessedAverageEmissionsDataPointsForRender" Width="1.5" PointX="2.75" PointY="8" />
+        <AssociationConnector Association="SmartEnergyDbModel.FK_CarbonEmissionsDataPoints_EmissionsRegionID" />
+        <AssociationConnector Association="SmartEnergyDbModel.FK_CarbonEmissionsRelativeMeritDataPoints_EmissionsRegionID" />
+        <AssociationConnector Association="SmartEnergyDbModel.FK_MarketWeatherEmissionsRegionMapping_EmissionsRegionID" />
+        <AssociationConnector Association="SmartEnergyDbModel.FK_MarketWeatherEmissionsRegionMapping_MarketRegionID" />
+        <AssociationConnector Association="SmartEnergyDbModel.FK_MarketWeatherEmissionsRegionMapping_WeatherRegionID" />
+        <AssociationConnector Association="SmartEnergyDbModel.FK_WeatherDataPoints_WeatherRegionID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApiMinerConfigLayout>
+  <Regions>
+    <Region friendlyName="Norway_Kristiansand">
+      <WeatherMiningRegion friendlyName="Norway_Kristiansand">
+        <weatherRegionWundergroundSubUrl>no/kristiansand</weatherRegionWundergroundSubUrl>
+        <Latitude>58.24158635676374</Latitude>
+        <Longitude>8.096923830624974</Longitude>
+        <MiningMethod>WundergroundPageSubUrl</MiningMethod>
+        <TimeZone>Central European Standard Time</TimeZone>
+        <ApiUrl>http://api.wunderground.com/api/</ApiUrl>
+        <ApiKey>**MyWundergroundApiKey**</ApiKey>
+        <SelfThrottlingMethod>AzureTableStorageCallRecollection</SelfThrottlingMethod>
+        <MaxNumberOfCallsPerMinute>4</MaxNumberOfCallsPerMinute>
+      </WeatherMiningRegion>
+    </Region>
+
+    <Region friendlyName="Norway_Oye">
+      <WeatherMiningRegion friendlyName="Norway_Oye">
+        <weatherRegionWundergroundSubUrl></weatherRegionWundergroundSubUrl>
+        <Latitude>58.279231</Latitude>
+        <Longitude>6.892410</Longitude>
+        <MiningMethod>GPS</MiningMethod>
+        <TimeZone>Central European Standard Time</TimeZone>
+        <ApiUrl>http://api.wunderground.com/api/</ApiUrl>
+        <ApiKey>**MyWundergroundApiKey**</ApiKey>
+        <SelfThrottlingMethod>AzureTableStorageCallRecollection</SelfThrottlingMethod>
+        <MaxNumberOfCallsPerMinute>4</MaxNumberOfCallsPerMinute>
+      </WeatherMiningRegion>
+    </Region>
+  </Regions>
+</ApiMinerConfigLayout>
