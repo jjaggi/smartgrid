@@ -1,7 +1,7 @@
 # Carbon Emissions Data Platform
 Optimising energy consumption based on the real-time Marginal Emissions of an electricity market can substantially reduce the consumer's Carbon Emissions.
 This is a demonstration solution to show how data from several Web based APIs can be mined, visualised and acted upon in a Microsoft Azure solution. This solution collects real-time Carbon Emissions data from the WattTime API (https://api.watttime.org/), and global Weather data and weather forecasts from the Wunderground API (https://www.wunderground.com/). It then visualises this data over time to allow the user to understand the relationship between the two. It demonstrates the ability to collect related pieces of data into a single place to allow automation to act upon the conclusions extracted from it. For example, automating devices via the Azure IoT service to minimise net Carbon Emissions.
-For more information, and the source code of the solution, see the project's GitHub page at https://github.com/Microsoft/Smart-Energy-Foundation-Demo-Stack .
+
 
 ![Image](https://github.com/Microsoft/Smart-Energy-Foundation-Demo-Stack/blob/master/Images/MarginalEmissionsDashboard.PNG)
 
@@ -19,8 +19,7 @@ This solution automatically provisions the required Azure infrastructure, and ki
 * An Azure Storage account
 * An Azure Function to create the database tables and initial seeded data
 * An Azure Function that runs every hour, mining carbon emissions data from the pre-selected markets
-* A PowerBI Report showing your real-time electricity grid carbon emissions data, and whether now is a good, average or bad time to consume power in order to minimise carbon emissions. That dashboard will appear at https://functions-*MyFunctionNamespace*.azurewebsites.net/api/pbiweb 
-
+* A PowerBI Report showing your real-time electricity grid carbon emissions data, and whether now is a good, average or bad time to consume power in order to minimise carbon emissions. 
 
 # Configuring the Data Miner / Updating  the Regions Mined:
 The DataMinerFunction reads where it should mine Weather and Emissions data from in the ApiDataMinerConfigs.xml file in the DataMinerWorkerRole project. The XML file contains a series of <Region> elements, comprised of a \<EmissionsMiningRegion\> and a \<WeatherMiningRegion\>. A Region element can have one or both. Configure the details  of a region as such: 
